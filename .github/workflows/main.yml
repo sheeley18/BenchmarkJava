@@ -1,0 +1,25 @@
+name: Synopsys Security Testing
+
+on:
+  push:
+    # At this time, it is recommended to run Polaris only on pushes to main branches
+    # Pull request analysis will be supported by Polaris in the future
+    branches: [ master, main ]
+
+  pull_request:
+    branches: [ master, main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Synopsys Action
+        uses: synopsys-sig/synopsys-action@v1.2.0
+        with:
+          polaris_serverUrl: "https://poc.polaris.synopsys.com"
+          polaris_accessToken: "i6lnkpoj8l69l2bp3m3g6ukj1hcrc08ai1tkpg5hl7p9r5oivq0dhqvdn2u1t8s2lsneijhbj9u44"
+          polaris_application_name: "SRH-GH"
+          polaris_project_name: "1"
+          polaris_assessment_types: "SCA,SAST"
