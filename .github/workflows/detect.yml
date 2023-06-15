@@ -6,7 +6,8 @@ on:
 
   pull_request:
     branches: [ master, main ]
-
+env:
+ DETECT_LATEST_RELEASE_VERSION: 8.9.0
 jobs:
   build:
     runs-on: ubuntu-latest
