@@ -16,7 +16,7 @@ jobs:
       - name: Synopsys Action
         uses: synopsys-sig/synopsys-action@v1.2.0
         with:
-          blackduck_apiToken: MTU1NjczMWQtMjljMS00ZWQ1LWFkYzEtMTgyNzAxNjc3ZmIwOmI2Mzg3MmRiLWFiYTItNDZhOS05MjI2LTNkOGQxZjU3ODk2OQ==
+          blackduck_apiToken: M2MzZWNmMGItNWY1ZS00MTdjLTk3YTYtODQxN2Y5OTNmOTgzOjg4YmZhNDM0LWNlNTktNDYxOC1hMTA2LTRiNzNmZjBkYTQ0MQ==
           blackduck_url: https://testing.blackduck.synopsys.com 
           
           #Optional- To enable feedback from Black Duck security testing as pull request comment
