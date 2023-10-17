@@ -10,7 +10,7 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-- task: SynopsysSecurityScan@1.2.0
+- task: SynopsysSecurityScan@1
   inputs:
     scanType: 'blackduck'
     bridge_blackduck_url: 'https://testing.blackduck.synopsys.com'
