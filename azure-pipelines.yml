@@ -11,6 +11,7 @@ pool:
 
 steps:
 - task: SynopsysSecurityScan@1
+  displayName: 'Black Duck Scan'
   inputs:
     scanType: 'blackduck'
     bridge_blackduck_url: 'https://testing.blackduck.synopsys.com'
